@@ -23,8 +23,8 @@ contract DPlayCritic is DPlayCriticInterface, NetworkChecker {
 		if (network == Network.Mainnet) {
 			//TODO
 		} else if (network == Network.Kovan) {
-			dplayCoin = DPlayCoinInterface(0xD3D2a9C0dA386D0d37573f7D06471DB81cfb3096);
-			dplayStore = DPlayStoreInterface(0xaa13eD0564DF5019E2DD5E09f03b5Abd31bC832D);
+			dplayCoin = DPlayCoinInterface(0xfFF1528013478fc286ABBBE8071D5404b082Be5D);
+			dplayStore = DPlayStoreInterface(0x4d907141549bA4D311fEdDB3B0aDa6bA71587f27);
 		} else if (network == Network.Ropsten) {
 			//TODO
 		} else if (network == Network.Rinkeby) {
