@@ -21,14 +21,17 @@ contract DPlayCritic is DPlayCriticInterface, NetworkChecker {
 		
 		// DPlay 관련 스마트 계약들을 불러옵니다.
 		if (network == Network.Mainnet) {
-			//TODO
+			dplayCoin = DPlayCoinInterface(0x92c5387aCE61F5c505BF2c2D4c84120F0A813d4B);
+			dplayStore = DPlayStoreInterface(0x6AbD63da2f98dD181B30eedd0377e74DF503e55B);
 		} else if (network == Network.Kovan) {
-			dplayCoin = DPlayCoinInterface(0xfFF1528013478fc286ABBBE8071D5404b082Be5D);
-			dplayStore = DPlayStoreInterface(0x4d907141549bA4D311fEdDB3B0aDa6bA71587f27);
+			dplayCoin = DPlayCoinInterface(0xb53A87bC4E5443a3e7BdaB0FAb53fd5661573036);
+			dplayStore = DPlayStoreInterface(0x8C2E9938DBd456ac12329fC9cC566bCF0D6269B8);
 		} else if (network == Network.Ropsten) {
-			//TODO
+			dplayCoin = DPlayCoinInterface(0x1ab85da3f07D66C4465929b8B8C1C8C47b531d5a);
+			dplayStore = DPlayStoreInterface(0x81Eba90B7765fda1AF6aEA03db2491cff4a243Cf);
 		} else if (network == Network.Rinkeby) {
-			//TODO
+			dplayCoin = DPlayCoinInterface(0xBDC07353d7D0CBeD081cA08933a1ACA0d9c82a38);
+			dplayStore = DPlayStoreInterface(0x01DA6dAdCE4662ecB32A544D8dD6f2796Ae986a6);
 		} else {
 			revert();
 		}
